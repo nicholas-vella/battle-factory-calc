@@ -11,11 +11,12 @@ title: Battle Facilities Calculator
 	{% seo %}
 	<title>{{ page.title }}</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link id="select2css" type="text/css" rel="stylesheet" href="/_css/select2.css" />
+	<link id="select2css" type="text/css" rel="stylesheet" href="{{ site.baseurl }}/_css/select2.css" />
 	<link id="apcalccss" type="text/css" rel="stylesheet" href="_css/dark_ap_calc.css" />
 	<link id="nbcalccss" type="text/css" rel="stylesheet" href="_css/dark_nb_calc.css" />
+	<link id="bftheme" type="text/css" rel="stylesheet" href="{{ site.baseurl }}/_css/battle-factory-theme.css" />
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script type="text/javascript" src="/_scripts/themes.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/_scripts/themes.js"></script>
 	<base target="_blank">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-115954423-1"></script>
@@ -44,10 +45,10 @@ title: Battle Facilities Calculator
 		if (document.getElementById("theme") != null && document.getElementById("midimg") != null) {
 			var drop = $("#theme").val();
 
-			$('#midimg')[0].src = "../_images/tower.png";
+			$('#midimg')[0].src = "{{ site.baseurl }}/_images/tower.png";
 		}
 	</script>
-	<script type="text/javascript" src="../_scripts/themes_choose.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/_scripts/themes_choose.js"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
