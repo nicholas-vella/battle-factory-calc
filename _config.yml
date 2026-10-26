@@ -1,5 +1,19 @@
 include: ['_css', '_scripts', '_images']
 
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - process-palette.json
+  - fix.bat
+  - run.bat
+  - setup.bat
+  - test.bat
+  - test/
+  - vendor/
+
 title: Battle Facilities Calculator
 
 baseurl: /calc
